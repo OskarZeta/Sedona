@@ -1,0 +1,15 @@
+.bridge-bg{
+  background: url("../images/photo-bridge@1x.jpg") center top no-repeat;
+  background-size: cover;
+}
+@media (min-width: 768px) {
+  .bridge-bg{
+    order: -1;
+  }
+}
+@media (min-width: 1200px) {
+  .bridge-bg{
+    background-size: cover;
+    background-position-y: -80px;
+  }
+}

@@ -1,0 +1,38 @@
+@mixin container(){
+  min-width: 320px;
+  margin: 0 auto;
+  @media (min-width: 768px) {
+    width: 768px;
+    box-shadow: 0 0 40px -10px rgba(0,0,0,0.75);
+  }
+  @media (min-width: 1200px) {
+    width: 1200px;
+  }
+}
+@mixin content-description-style(){
+  text-align: center;
+  h2{
+    padding-top: 40px;
+  }
+  span{
+    display: block;
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 400;
+    padding-top: 13px;
+    padding-bottom: 19px;
+  }
+  p{
+    padding: 0 40px;
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 400;
+  }
+}
+@mixin clear(){
+  &::after{
+    content: "";
+    display: block;
+    clear: both;
+  }
+}

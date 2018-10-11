@@ -1,0 +1,8 @@
+main{
+  //@include container;
+}
+body{
+  @media (min-width: 768px){
+    background-color: #f2f2f2;
+  }
+}

@@ -1,0 +1,26 @@
+.btn{
+  display: block;
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 26px;
+  color: white;
+  background-color: #81b3d2;
+  padding: 18px 0;
+  margin: 0 auto 50px auto;
+  width: 280px;
+}
+.btn--hotel{
+  &:hover{
+    background-color: #669ec0;
+  }
+  &:active{
+    background-color: #5496bd;
+    color: rgba(255, 255, 255, 0.3);
+  }
+}
+@media (min-width: 768px) {
+  .btn{
+    width: 460px;
+    margin-bottom: 60px;
+  }
+}

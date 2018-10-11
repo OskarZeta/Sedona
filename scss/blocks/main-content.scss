@@ -1,0 +1,127 @@
+.main-content__services{
+  padding-bottom: 40px;
+  background-color: white;
+}
+.main-content__service-item{
+  display: flex;
+  position: relative;
+  padding-top: 25px;
+  svg{
+    position: absolute;
+    display: block;
+    left: 20px;
+    top: 25px;
+    margin: 0 auto;
+  }
+}
+.main-content__service-description{
+  margin-left: 70px;
+  h2{
+    margin: 7px 0 15px 0;
+    font-size: 18px;
+    line-height: 26px;
+  }
+  p{
+    padding-right: 50px;
+    font-size: 14px;
+    line-height: 21px;
+  }
+}
+.main-content__advantages{
+  background-color: #eeeeee;
+  padding: 0 20px;
+}
+.main-content__advantage-item{
+  @include content-description-style;
+  background-color: #eeeeee;
+  border-bottom: 1px solid #d6d6d6;
+  h2{
+    padding-top: 30px;
+  }
+  p{
+    padding-bottom: 30px;
+  }
+  &:last-child{
+    border-bottom: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .main-content__services{
+    display: flex;
+    padding-top: 70px;
+    padding-bottom: 60px;
+  }
+  .main-content__service-item{
+    display: block;
+    padding: 0;
+    margin-top: 0;
+    svg{
+      position: static;
+      width: 75px;
+      height: 72px;
+      margin: 0 auto 15px auto;
+    }
+    &:nth-child(2){
+      order: 3;
+    }
+  }
+  .main-content__service-description{
+    margin-left: 0;
+    text-align: center;
+    padding: 0 30px;
+    p{
+      padding-right: 0;
+    }
+    h2{
+      margin: 7px 0 20px 0;
+      font-size: 21px;
+      line-height: 26px;
+    }
+  }
+  .main-content__advantages{
+    display: flex;
+    padding: 0;
+  }
+  .main-content__advantage-item{
+    border-bottom: none;
+    width: 33%;
+    h2{
+      padding: 50px 50px 0 50px;
+      font-size: 21px;
+      line-height: 26px;
+    }
+    p{
+      padding-bottom: 30px;
+      font-size: 14px;
+      line-height: 21px;
+    }
+    span{
+      font-size: 14px;
+      line-height: 21px;
+    }
+    &:last-child{
+      border-bottom: none;
+    }
+  }
+}
+@media (min-width: 1200px) {
+  .main-content__services{
+    padding-bottom: 80px;
+  }
+  .main-content__service-description{
+    padding: 0 15%;
+  }
+  .main-content__advantage-item{
+    padding: 0 20px;
+    h2{
+      padding-left: 30%;
+      padding-right: 30%;
+    }
+    p{
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-bottom: 70px;
+    }
+  }
+}

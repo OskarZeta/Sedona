@@ -1,0 +1,494 @@
+.review-form{
+  background-color: white;
+  padding-bottom: 30px;
+  legend{
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: bold;
+    text-align: center;
+    border-top: 1px solid #e5e5e5;
+    padding: 20px 0;
+    width: 100%;
+  }
+  label{
+    padding-left: 20px;
+    padding-right: 20px;
+    display: block;
+  }
+  input{
+    text-transform: none;
+    font-weight: bold;
+  }
+  .btn{
+    text-transform: uppercase;
+    margin-bottom: 0;
+  }
+}
+.review-form__required-fields{
+  display: none;
+}
+.review-form__user-section{
+  padding-bottom: 5px;
+  label{
+    display: flex;
+    font-size: 14px;
+    line-height: 26px;
+    align-items: center;
+    margin-bottom: 23px;
+  }
+  input{
+    margin-left: 18px;
+    background-color: #f2f2f2;
+    width: 100%;
+    overflow: hidden;
+    font-size: 18px;
+    line-height: 26px;
+    padding: 14px 22px;
+  }
+  .review-form__label{
+    display: block;
+    padding: 16px 0;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 26px;
+    text-transform: uppercase;
+  }
+}
+.review-form__contact-info{
+  label{
+    font-size: 14px;
+    line-height: 26px;
+    align-items: center;
+    margin-bottom: 10px;
+    position: relative;
+    padding-bottom: 30px;
+    &:last-child{
+      margin-bottom: 0;
+    }
+  }
+  input{
+    display: block;
+    background-color: #f2f2f2;
+    width: 100%;
+    font-size: 18px;
+    line-height: 26px;
+    padding: 14px 80px 14px 22px;
+    &::-webkit-input-placeholder{
+      font-size: 18px;
+      line-height: 26px;
+      color: black;
+    }
+    &::-moz-placeholder{
+      font-size: 18px;
+      line-height: 26px;
+      color: black;
+    }
+  }
+  .review-form__label{
+    display: block;
+    margin-left: 22px;
+    margin-bottom: 9px;
+  }
+}
+.review-form__user-section input[type="text"], .review-form__contact-info input[type="text"]{
+  &:hover{
+    background-color: #e5e5e5;
+  }
+  &:focus{
+    background-color: white;
+    border: 4px solid #e5e5e5;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 18px;
+  }
+}
+.review-form__input-box{
+  position: relative;
+}
+.review-form__icon{
+  position: absolute;
+  display: flex;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 58px;
+  background-color: #e6e6e6;
+  svg{
+    width: 20px;
+    height: 20px;
+    margin: auto auto;
+  }
+}
+.review-form__error-msg{
+  display: block;
+  position: absolute;
+  text-transform: none;
+  margin-left: 22px;
+  color: red;
+}
+.review-form__opinion-section{
+  input{
+    display: none;
+    &:checked{
+      + .review-form__radiobtn::before{
+        content: "";
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 22px;
+        height: 22px;
+        margin-left: -11px;
+        margin-top: -11px;
+        background-color: black;
+        border-radius: 20px;
+      }
+    }
+  }
+  label{
+    position: relative;
+    padding-left: 98px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    &:last-child{
+      margin-bottom: 28px;
+    }
+    &:hover{
+      .review-form__radiobtn{
+        background-color: #e5e5e5;
+      }
+    }
+    &:active{
+      .review-form__radiobtn{
+        background-color: #d5d5d5;
+        &::before{
+          opacity: 0.3;
+        }
+      }
+    }
+  }
+  .review-form__label{
+    display: block;
+    padding: 16px 0;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 26px;
+    text-transform: none;
+  }
+  .review-form__radiobtn{
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 20px;
+    width: 56px;
+    height: 56px;
+    background-color: #f2f2f2;
+    border-radius: 60px;
+  }
+}
+
+.review-form__visited-places{
+  input{
+    display: none;
+    &:checked{
+      + .review-form__checkbtn::before{
+        content: "";
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 24px;
+        height: 16px;
+        margin-left: -12px;
+        margin-top: -8px;
+        background: url("../images/tick.svg");
+      }
+    }
+  }
+  label{
+    position: relative;
+    padding-left: 98px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    &:last-child{
+      margin-bottom: 26px;
+    }
+    &:hover{
+      .review-form__checkbtn{
+        background-color: #e5e5e5;
+      }
+    }
+    &:active{
+      .review-form__checkbtn{
+        background-color: #d5d5d5;
+        &::before{
+          opacity: 0.3;
+        }
+      }
+    }
+  }
+  .review-form__label{
+    display: block;
+    padding: 16px 0;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 26px;
+    text-transform: none;
+  }
+  .review-form__checkbtn{
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 20px;
+    width: 56px;
+    height: 56px;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+  }
+}
+.review-form__comment{
+  textarea{
+    display: block;
+    resize: none;
+    background-color: #f2f2f2;
+    width: calc(100% - 40px);
+    min-height: 160px;
+    padding: 14px 20px;
+    margin: 0 20px 45px 20px;
+    font-size: 18px;
+    line-height: 26px;
+    text-transform: none;
+    &::-webkit-input-placeholder{
+      font-size: 18px;
+      line-height: 26px;
+      font-weight: bold;
+      color: black;
+      text-transform: none;
+    }
+    &::-moz-placeholder{
+      font-size: 18px;
+      line-height: 26px;
+      font-weight: bold;
+      color: black;
+      text-transform: none;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .review-form{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0 60px;
+    padding-bottom: 70px;
+    legend{
+      font-size: 21px;
+      border-top: none;
+      width: auto;
+    }
+    .btn{
+      margin: 0;
+      width: 50%;
+    }
+  }
+  .review-form__user-section{
+    flex-basis: 41%;
+    position: relative;
+    padding-bottom: 0;
+    legend{
+      text-align: left;
+      padding: 30px 0 32px 0;
+      visibility: hidden;
+      position: relative;
+      &::after{
+        content: "Представьтесь:";
+        display: block;
+        visibility: visible;
+        position: absolute;
+        top: 30px;
+      }
+    }
+    label{
+      padding: 0;
+      margin-bottom: 25px;
+    }
+    input{
+      overflow: hidden;
+    }
+  }
+  .review-form__contact-info{
+    width: 100%;
+    border-top: 1px solid #e5e5e5;
+    margin-top: 20px;
+    legend{
+      padding-left: 60px;
+      padding-right: 60px;
+      display: block;
+    }
+    label{
+      padding-left: 0;
+      padding-right: 0;
+      padding-bottom: 0;
+      margin-bottom: 25px;
+      &:last-child{
+        margin-bottom: 35px;
+      }
+    }
+    .review-form__error-msg{
+      top: -35px;
+      right: 0;
+      margin-left: 0;
+    }
+  }
+  .review-form__opinion-section{
+    order: -1;
+    width: 50%;
+    border-right: 1px solid #e5e5e5;
+    legend{
+      text-align: left;
+      padding: 30px 0;
+      margin-bottom: 30px;
+    }
+    label{
+      padding-left: 78px;
+      padding-right: 0;
+      margin-bottom: 20px;
+    }
+    .review-form__radiobtn{
+      left: 0;
+    }
+  }
+  .review-form__visited-places{
+    width: 100%;
+    border-top: 1px solid #e5e5e5;
+    padding-left: 95px;
+    padding-right: 95px;
+    margin-bottom: 15px;
+    @include clear;
+    legend{
+      padding-left: 25px;
+      padding-right: 25px;
+      width: 80%;
+      margin: 0 auto 20px auto;
+    }
+    label{
+      font-size: 0;
+      width: 45%;
+      padding-right: 0;
+      padding-left: 78px;
+      margin-bottom: 30px;
+      &:nth-child(2), &:nth-child(4){
+        float: left;
+      }
+      &:nth-child(3), &:nth-child(5){
+        float: right;
+      }
+    }
+    .review-form__label{
+      display: inline-block;
+    }
+    .review-form__checkbtn{
+      left: 0;
+    }
+  }
+  .review-form__comment{
+    width: 100%;
+    border-top: 1px solid #e5e5e5;
+    legend{
+      padding-left: 65px;
+      padding-right: 65px;
+      margin: 0 auto 40px auto;
+    }
+    textarea{
+      width: 100%;
+      margin: 0 0 55px 0;
+    }
+  }
+
+  .review-form__required-fields{
+    display: inline-block;
+    align-self: center;
+  }
+}
+@media (min-width: 1200px) {
+  .review-form{
+    padding-left: 120px;
+    padding-right: 120px;
+  }
+  .review-form__user-section{
+    legend {
+      visibility: visible;
+      margin-bottom: 30px;
+      &::after {
+        display: none;
+      }
+    }
+  }
+  .review-form__contact-info{
+    font-size: 0;
+    position: relative;
+    margin-bottom: 35px;
+    legend{
+      margin-bottom: 55px;
+    }
+    .review-form__label{
+      display: inline-block;
+      margin: 0;
+      padding-top: 13.5px;
+    }
+    label{
+      display: inline-block;
+      width: 50%;
+      margin: 0;
+      @include clear;
+      &:nth-child(2){
+        .review-form__label{
+          visibility: hidden;
+          position: relative;
+          &::after{
+            content: "телефон";
+            display: block;
+            visibility: visible;
+            position: absolute;
+            top: 13.5px;
+          }
+        }
+        .review-form__input-box{
+          float: none;
+          margin-left: -70px;
+        }
+      }
+      &:last-child{
+        margin-bottom: 0;
+      }
+
+    }
+    .review-form__error-msg{
+      left: 20px;
+    }
+    input[type="text"]{
+      &:focus{
+        background-color: white;
+        border: 4px solid #e5e5e5;
+        padding: 10px 76px 10px 18px;
+      }
+    }
+  }
+
+  .review-form__input-box{
+    display: inline-block;
+    float: right;
+  }
+  .review-form__visited-places{
+    padding-left: 0;
+    padding-right: 0;
+    legend{
+      width: 40%;
+    }
+    label{
+      width: 25%;
+    }
+  }
+}

@@ -1,0 +1,11 @@
+.city-bg{
+  background: url("../images/photo-city@1x.jpg") center top no-repeat;
+  background-size: cover;
+  //background-size: 150% 100%;
+}
+@media (min-width: 1200px) {
+  .city-bg{
+    background-size: cover;
+    background-position-y: -80px;
+  }
+}

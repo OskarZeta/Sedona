@@ -1,0 +1,29 @@
+.social-block{
+  display: inline-flex;
+  font-size: 0;
+  margin-bottom: 40px;
+}
+.social-block a{
+  display: flex;
+  width: 46px;
+  height: 48px;
+  background-color: #81b3d2;
+  margin-right: 6px;
+  svg{
+    margin: auto auto;
+  }
+  &:hover{
+    background-color: #669ec0;
+  }
+  &:active{
+    background-color: #5496bd;
+    svg{
+      opacity: 0.3;
+    }
+  }
+}
+@media (min-width: 768px) {
+  .social-block{
+    margin-bottom: 0;
+  }
+}

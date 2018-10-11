@@ -1,0 +1,25 @@
+.content-block{
+  //@include container;
+}
+.content-block__bg{
+  width: 100%;
+  min-height: 255px;
+}
+@media (min-width: 768px) {
+  .content-block{
+    display: flex;
+    justify-content: center;
+  }
+  .content-block__bg{
+    width: 67%;
+    min-height: 255px;
+  }
+}
+@media (min-width: 1200px) {
+  .content-block{
+
+  }
+  .content-block__bg{
+
+  }
+}

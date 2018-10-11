@@ -1,0 +1,58 @@
+@import "normalize.scss";
+@import "mixins.scss";
+
+*{
+	box-sizing: border-box;
+	font-family: 'PT Sans', 'Arial', sans-serif;
+	text-transform: uppercase;
+}
+p, h1, h2, h3, ul{
+	margin: 0;
+	padding: 0;
+}
+li{
+	list-style-type: none;
+}
+a{
+	text-decoration: none;
+}
+input, textarea{
+	outline: none;
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+button{
+	border: none;
+}
+fieldset{
+	border: none;
+	margin: 0;
+	padding: 0;
+}
+legend{
+	border: none;
+	margin: 0;
+	padding: 0;
+}
+.svg-hidden{
+	display: none;
+}
+
+@import "blocks/page-header.scss";
+@import "blocks/main-menu.scss";
+@import "blocks/teaser.scss";
+@import "blocks/content-block.scss";
+@import "blocks/content-description.scss";
+@import "blocks/city-bg.scss";
+@import "blocks/bridge-bg.scss";
+@import "blocks/main-content.scss";
+@import "blocks/search-section.scss";
+@import "blocks/btn.scss";
+@import "blocks/footer.scss";
+@import "blocks/social-block.scss";
+@import "blocks/main.scss";
+@import "blocks/body-container.scss";
+@import "blocks/review-form.scss";
+@import "blocks/photo-gallery.scss";
+
